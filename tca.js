@@ -1,0 +1,4 @@
+class piloto = {
+    equipe
+    nacionalidade
+}
