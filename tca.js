@@ -25,13 +25,13 @@ seuritmo = Math.floor(Math.random() * 70 + 30)
 suatotal = Math.floor(
     (suaexperiencia + suahabilidade + suavisao + seuritmo * 1.25) / 4
 );
-let seuPiloto = new piloto(seunome, suaidade, suanacionalidade, suaexperiencia, suahabilidade, suavisao, seuritmo, suatotal)
+let seuPiloto = new piloto(seunome, suaidade, "", suanacionalidade, suaexperiencia, suahabilidade, suavisao, seuritmo, suatotal);
 
 
 let max = {
     nome: "Max Verstappen",
     idade: 29,
-    equipe: "Red Bull Racing",
+    equipe: {"nome": "Red Bull Racing", "desempenho": 95},
     nacionalidade: "Holandês",
     experiencia: 88,
     habilidade: 96,
@@ -42,7 +42,7 @@ let max = {
 let leclerc = {
     nome: "Charles Leclerc",
     idade: 29,
-    equipe: "Ferrari",
+    equipe: {"nome": "Ferrari", "desempenho": 88},
     nacionalidade: "Monegasco",
     experiencia: 83,
     habilidade: 92,
@@ -53,7 +53,7 @@ let leclerc = {
 let hamilton = {
     nome: "Lewis Hamilton",
     idade: 41,
-    equipe: "Ferrari",
+    equipe: {"nome": "Ferrari", "desempenho": 88},
     nacionalidade: "Britânico",
     experiencia: 98,
     habilidade: 93,
@@ -64,7 +64,7 @@ let hamilton = {
 let lando = {
     nome: "Lando Norris",
     idade: 26,
-    equipe: "McLaren",
+    equipe: {"nome": "McLaren", "desempenho": 87},
     nacionalidade: "Britânico",
     experiencia: 83,
     habilidade: 93,
@@ -75,7 +75,7 @@ let lando = {
 let piastri = {
     nome: "Oscar Piastri",
     idade: 25,
-    equipe: "McLaren",
+    equipe: {"nome": "McLaren", "desempenho": 87},
     nacionalidade: "Australiano",
     experiencia: 78,
     habilidade: 95,
@@ -86,7 +86,7 @@ let piastri = {
 let George = {
     nome: "George Russell",
     idade: 28,
-    equipe: "Mercedes",
+    equipe: {"nome": "Mercedes", "desempenho": 85},
     nacionalidade: "Britânico",
     experiencia: 83,
     habilidade: 94,
@@ -97,7 +97,7 @@ let George = {
 let alonso = {
     nome: "Fernando Alonso",
     idade: 44,
-    equipe: "Aston Martin",
+    equipe: {"nome": "Aston Martin", "desempenho": 85},
     nacionalidade: "Espanhol",
     experiencia: 99,
     habilidade: 87,
@@ -108,7 +108,7 @@ let alonso = {
 let antonelli = {
     nome: "kimi Antonelli",
     idade: 20,
-    equipe: "Mercedes",
+    equipe: {"nome": "Mercedes", "desempenho": 85},
     nacionalidade: "Italiano",
     experiencia: 71,
     habilidade: 85,
@@ -119,7 +119,7 @@ let antonelli = {
 let gasly = {
     nome: "Pierre Gasly",
     idade: 30,
-    equipe: "Alpine",
+    equipe: {"nome": "Alpine", "desempenho": 86},
     nacionalidade: "Francês",
     experiencia: 83,
     habilidade: 84,
@@ -130,7 +130,7 @@ let gasly = {
 let sainz = {
     nome: "Carlos Sainz",
     idade: 32,
-    equipe: "Williams",
+    equipe: {"nome": "Williams", "desempenho": 86},
     nacionalidade: "Espanhol",
     experiencia: 98,
     habilidade: 87,
@@ -141,7 +141,7 @@ let sainz = {
 let Hülkenberg = {
     nome: "Nico Hülkenberg",
     idade: 39,
-    equipe: "Audi",
+    equipe: {"nome": "Audi", "desempenho": 85},
     nacionalidade: "Alemão",
     experiencia: 88,
     habilidade: 85,
@@ -152,7 +152,7 @@ let Hülkenberg = {
 let perez = {
     nome: "Sergio Perez",
     idade: 36,
-    equipe: "Cadillac",
+    equipe: {"nome": "Cadillac", "desempenho": 85},
     nacionalidade: "Mexicano",
     experiencia: 92,
     habilidade: 83,
@@ -163,7 +163,7 @@ let perez = {
 let hadjar = {
     nome: "Isack Hadjar",
     idade: 22,
-    equipe: "Red Bull Racing",
+    equipe: {"nome": "Red Bull Racing", "desempenho": 95},
     nacionalidade: "Francês",
     experiencia: 72,
     habilidade: 81,
@@ -174,7 +174,7 @@ let hadjar = {
 let Ocon = {
     nome: "Esteban Ocon",
     idade: 30,
-    equipe: "Haas",
+    equipe: {"nome": "Haas", "desempenho": 75},
     nacionalidade: "Francês",
     experiencia: 83,
     habilidade: 85,
@@ -185,7 +185,7 @@ let Ocon = {
 let bearman = {
     nome: "Oliver Bearman",
     idade: 21,
-    equipe: "Haas",
+    equipe: {"nome": "Haas", "desempenho": 75},
     nacionalidade: "Britânico",
     experiencia: 73,
     habilidade: 88,
@@ -196,7 +196,7 @@ let bearman = {
 let albon = {
     nome: "Alexander Albon",
     idade: 30,
-    equipe: "Williams",
+    equipe: {"nome": "Williams", "desempenho": 86},
     nacionalidade: "Tailandês",
     experiencia: 84,
     habilidade: 86,
@@ -207,7 +207,7 @@ let albon = {
 let bottas = {
     nome: "Valtteri Bottas",
     idade: 37,
-    equipe: "Cadillac",
+    equipe: {"nome": "Cadillac", "desempenho": 85},
     nacionalidade: "Finlandês",
     experiencia: 89,
     habilidade: 76,
@@ -218,7 +218,7 @@ let bottas = {
 let Bortoleto = {
     nome: "Gabriel Bortoleto",
     idade: 22,
-    equipe: "Audi",
+    equipe: {"nome": "Audi", "desempenho": 78},
     nacionalidade: "Brasileiro",
     experiencia: 70,
     habilidade: 82,
@@ -229,7 +229,7 @@ let Bortoleto = {
 let Lawson = {
     nome: "Liam Lawson",
     idade: 24,
-    equipe: "Racing Bulls",
+    equipe: {"nome": "Racing Bulls", "desempenho": 82},
     nacionalidade: "Neozelandês",
     experiencia: 74,
     habilidade: 81,
@@ -240,7 +240,7 @@ let Lawson = {
 let Stroll = {
     nome: "Lance Stroll",
     idade: 27,
-    equipe: "Aston Martin",
+    equipe: {"nome": "Aston Martin", "desempenho": 72},
     nacionalidade: "Canadense",
     experiencia: 84,
     habilidade: 77,
@@ -251,7 +251,7 @@ let Stroll = {
 let Colapinto = {
     nome: "Franco Colapinto",
     idade: 23,
-    equipe: "Alpine",
+    equipe: {"nome": "Alpine", "desempenho": 80},
     nacionalidade: "Argentino",
     experiencia: 70,
     habilidade: 71,
@@ -262,7 +262,7 @@ let Colapinto = {
 let Lindblad = {
     nome: "Arvid Lindblad",
     idade: 19,
-    equipe: "Racing Bulls",
+    equipe: {"nome": "Racing Bulls", "desempenho": 82},
     nacionalidade: "Britânico",
     experiencia: 50,
     habilidade: 72,
@@ -295,27 +295,25 @@ let pilotos = [
     Lindblad
 ];
 
+  let equipes = [
+        {"nome": "McLaren", "desempenho": 87},       
+        {"nome": "Red Bull Racing", "desempenho": 88},
+        {"nome": "Mercedes", "desempenho": 90},
+        {"nome": "Aston Martin", "desempenho": 72},
+        {"nome": "Alpine", "desempenho": 80},
+        {"nome": "Williams", "desempenho": 73},
+        {"nome": "Racing Bulls", "desempenho": 82},
+        {"nome": "Haas", "desempenho": 75},
+        {"nome": "Audi", "desempenho": 78},
+        {"nome": "Cadillac", "desempenho": 71}
+    ];
 
 function substituirPiloto(pilotos, seuPiloto) {
-
-    let equipes = [
-        "McLaren",
-        "Ferrari",
-        "Red Bull Racing",
-        "Mercedes",
-        "Aston Martin",
-        "Alpine",
-        "Williams",
-        "Racing Bulls",
-        "Haas",
-        "Audi",
-        "Cadillac"
-    ];
 
     console.log("===== ESCOLHA SUA EQUIPE =====");
 
     for (let i = 0; i < equipes.length; i++) {
-        console.log((i + 1) + " - " + equipes[i]);
+        console.log((i + 1) + " - " + equipes[i].nome);
     }
 
     let escolhaEquipe = Number(
@@ -333,21 +331,21 @@ function substituirPiloto(pilotos, seuPiloto) {
 
     let equipeEscolhida = equipes[escolhaEquipe - 1];
 
-    // Encontrar os dois pilotos da equipe escolhida
+ 
     let pilotosDaEquipe = [];
 
     for (let i = 0; i < pilotos.length; i++) {
 
-        if (pilotos[i].equipe === equipeEscolhida) {
+        if (pilotos[i].equipe.nome === equipeEscolhida.nome) {
             pilotosDaEquipe.push(i);
         }
     }
 
-    // Verificar se a equipe possui dois pilotos
+
     if (pilotosDaEquipe.length !== 2) {
 
         alert(
-            "Erro: a equipe " + equipeEscolhida +
+            "Erro: a equipe " + equipeEscolhida.nome +
             " não possui exatamente dois pilotos cadastrados."
         );
 
@@ -380,30 +378,80 @@ function substituirPiloto(pilotos, seuPiloto) {
         );
     }
 
-    // Encontrar a posição do piloto que sairá
     let indiceSubstituido = pilotosDaEquipe[escolhaPiloto - 1];
 
     let pilotoSubstituido = pilotos[indiceSubstituido];
 
-    // Colocar o jogador na equipe escolhida
-    seuPiloto.equipe = equipeEscolhida;
+    seuPiloto.equipe = equipeEscolhida.nome;
 
-    // Substituir o piloto no grid
+  
     pilotos[indiceSubstituido] = seuPiloto;
 
     alert(
         "CONTRATAÇÃO CONFIRMADA!\n\n" +
         seuPiloto.nome + " entrou na equipe " +
-        equipeEscolhida + ".\n\n" +
+        equipeEscolhida.nome + ".\n\n" +
         pilotoSubstituido.nome +
         " foi substituído."
     );
 
     return true;
 }
-
+substituirPiloto(pilotos, seuPiloto);
 
 alert("Seu piloto foi criado com sucesso! \nNome: " + seuPiloto.nome + "\nIdade: " + seuPiloto.idade + "\nEquipe: " + seuPiloto.equipe + "\nNacionalidade: " + seuPiloto.nacionalidade + "\nExperiência: " + seuPiloto.experiencia + "\nHabilidade: " + seuPiloto.habilidade + "\nVisão: " + seuPiloto.visao + "\nRitmo: " + seuPiloto.ritmo + "\nTotal: " + seuPiloto.total)
 
-git config --global user.name "luizrenatodarosamarchand-maker"
-$ git config --global user.email luizrenatodarosamarchand@gmail.com
+
+function classificatorio(pilotos, equipes) {
+
+    for (let i = 0; i < pilotos.length; i++) {
+
+        pilotos[i].volta =
+            (90 + Math.random() * 4) -
+            (pilotos[i].habilidade * 0.2) -
+            (pilotos[i].experiencia * 0.1) -
+            (pilotos[i].equipe.desempenho * 0.1);
+    }
+
+  
+    let temporario = [...pilotos];
+
+    let resultados = [];
+
+    for (let i = 0; i < pilotos.length; i++) {
+
+        let menor = Infinity;
+        let posicao = -1;
+
+        for (let j = 0; j < temporario.length; j++) {
+
+           if (temporario[j] != undefined && temporario[j].volta < menor) {
+
+                menor = temporario[j].volta;
+                posicao = j;
+            }
+        }
+if (posicao === -1) {
+    break;
+}
+        resultados.push(temporario[posicao]);
+
+        temporario.splice(posicao, 1);
+    }
+
+    
+    console.log("===== RESULTADOS DO CLASSIFICATÓRIO =====");
+    console.log("Posição | Piloto | Equipe | Volta");
+
+    for (let i = 0; i < resultados.length; i++) {
+        console.log(
+            (i + 1) + "º | " +
+            resultados[i].nome + " | " +
+            resultados[i].equipe.nome + " | " +
+            resultados[i].volta.toFixed(3) + " s"
+        );
+    }
+return resultados;
+}
+classificatorio(pilotos, equipes);
+  
