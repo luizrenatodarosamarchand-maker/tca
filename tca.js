@@ -382,9 +382,9 @@ function substituirPiloto(pilotos, seuPiloto) {
 
     let pilotoSubstituido = pilotos[indiceSubstituido];
 
-    seuPiloto.equipe = equipeEscolhida.nome;
-
+    seuPiloto.equipe = { nome: equipeEscolhida.nome, desempenho: equipeEscolhida.desempenho };
   
+
     pilotos[indiceSubstituido] = seuPiloto;
 
     alert(
@@ -399,7 +399,7 @@ function substituirPiloto(pilotos, seuPiloto) {
 }
 substituirPiloto(pilotos, seuPiloto);
 
-alert("Seu piloto foi criado com sucesso! \nNome: " + seuPiloto.nome + "\nIdade: " + seuPiloto.idade + "\nEquipe: " + seuPiloto.equipe + "\nNacionalidade: " + seuPiloto.nacionalidade + "\nExperiência: " + seuPiloto.experiencia + "\nHabilidade: " + seuPiloto.habilidade + "\nVisão: " + seuPiloto.visao + "\nRitmo: " + seuPiloto.ritmo + "\nTotal: " + seuPiloto.total)
+alert("Seu piloto foi criado com sucesso! \nNome: " + seuPiloto.nome + "\nIdade: " + seuPiloto.idade + "\nEquipe: " + seuPiloto.equipe.nome + "\nNacionalidade: " + seuPiloto.nacionalidade + "\nExperiência: " + seuPiloto.experiencia + "\nHabilidade: " + seuPiloto.habilidade + "\nVisão: " + seuPiloto.visao + "\nRitmo: " + seuPiloto.ritmo + "\nTotal: " + seuPiloto.total)
 
 
 function classificatorio(pilotos, equipes) {
@@ -453,5 +453,55 @@ if (posicao === -1) {
     }
 return resultados;
 }
+function corrida(pilotos, equipes) {
+    for (let i = 0; i < pilotos.length; i++) {
+        pilotos[i].tempoTotal =
+            (pilotos[i].volta * 90) -
+            Math.random() * 50 -
+            (pilotos[i].habilidade * 0.2) -
+            (pilotos[i].experiencia * 0.1) -
+            (pilotos[i].equipe.desempenho * 0.1) -
+            (pilotos[i].ritmo * 0.1) -
+            (pilotos[i].visao * 0.1) -
+            (pilotos[i].total * 0.1);
+    }
+
+    let temporario = [...pilotos];
+    let resultados = [];
+
+    for (let i = 0; i < pilotos.length; i++) {
+        let menor = Infinity;
+        let posicao = -1;
+
+        for (let j = 0; j < temporario.length; j++) {
+            if (temporario[j] != undefined && temporario[j].tempoTotal < menor) {
+                menor = temporario[j].tempoTotal;
+                posicao = j;
+            }
+        }
+
+        if (posicao === -1) {
+            break;
+        }
+
+        resultados.push(temporario[posicao]);
+        temporario.splice(posicao, 1);
+    }
+
+    console.log("===== RESULTADOS DA CORRIDA =====");
+    console.log("Posição | Piloto | Equipe | Tempo");
+
+    for (let i = 0; i < resultados.length; i++) {
+        console.log(
+            (i + 1) + "º | " +
+            resultados[i].nome + " | " +
+            resultados[i].equipe.nome + " | " +
+            resultados[i].tempoTotal.toFixed(3) + " s"
+        );
+    }
+
+    return resultados;
+}
+
 classificatorio(pilotos, equipes);
-  
+corrida(pilotos, equipes);
