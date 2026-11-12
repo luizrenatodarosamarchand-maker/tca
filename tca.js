@@ -13,6 +13,7 @@ class piloto {
         this.visao = visao;
         this.ritmo = ritmo;
         this.total = total;
+        this.pontos = 0;
     }
 }
 seunome = prompt("Digite seu nome: ")
@@ -37,7 +38,8 @@ let max = {
     habilidade: 96,
     visao: 82,
     ritmo: 97,
-    total: 96
+    total: 96,
+    pontos: 0
 };
 let leclerc = {
     nome: "Charles Leclerc",
@@ -48,7 +50,8 @@ let leclerc = {
     habilidade: 92,
     visao: 91,
     ritmo: 93,
-    total: 93
+    total: 93,
+    pontos: 0
 };
 let hamilton = {
     nome: "Lewis Hamilton",
@@ -59,7 +62,8 @@ let hamilton = {
     habilidade: 93,
     visao: 91,
     ritmo: 90,
-    total: 93
+    total: 93,
+    pontos: 0
 };
 let lando = {
     nome: "Lando Norris",
@@ -70,7 +74,8 @@ let lando = {
     habilidade: 93,
     visao: 85,
     ritmo: 94,
-    total: 93
+    total: 93,
+    pontos: 0
 };
 let piastri = {
     nome: "Oscar Piastri",
@@ -81,7 +86,8 @@ let piastri = {
     habilidade: 95,
     visao: 84,
     ritmo: 91,
-    total: 92
+    total: 92,
+    pontos: 0
 };
 let George = {
     nome: "George Russell",
@@ -92,7 +98,8 @@ let George = {
     habilidade: 94,
     visao: 93,
     ritmo: 92,
-    total: 93
+    total: 93,
+    pontos: 0
 };
 let alonso = {
     nome: "Fernando Alonso",
@@ -103,7 +110,8 @@ let alonso = {
     habilidade: 87,
     visao: 85,
     ritmo: 90,
-    total: 90
+    total: 90,
+    pontos: 0
 };
 let antonelli = {
     nome: "kimi Antonelli",
@@ -114,7 +122,8 @@ let antonelli = {
     habilidade: 85,
     visao: 77,
     ritmo: 93,
-    total: 89
+    total: 89,
+    pontos: 0
 };
 let gasly = {
     nome: "Pierre Gasly",
@@ -125,7 +134,8 @@ let gasly = {
     habilidade: 84,
     visao: 78,
     ritmo: 86,
-    total: 86
+    total: 86,
+    pontos: 0
 };
 let sainz = {
     nome: "Carlos Sainz",
@@ -136,7 +146,8 @@ let sainz = {
     habilidade: 87,
     visao: 80,
     ritmo: 85,
-    total: 86
+    total: 86,
+    pontos: 0
 };
 let Hülkenberg = {
     nome: "Nico Hülkenberg",
@@ -147,7 +158,8 @@ let Hülkenberg = {
     habilidade: 85,
     visao: 85,
     ritmo: 85,
-    total: 86
+    total: 86,
+    pontos: 0
 };
 let perez = {
     nome: "Sergio Perez",
@@ -158,7 +170,8 @@ let perez = {
     habilidade: 83,
     visao: 81,
     ritmo: 85,
-    total: 86
+    total: 86,
+    pontos: 0
 };
 let hadjar = {
     nome: "Isack Hadjar",
@@ -169,7 +182,8 @@ let hadjar = {
     habilidade: 81,
     visao: 82,
     ritmo: 87,
-    total: 85
+    total: 85,
+    pontos: 0
 };
 let Ocon = {
     nome: "Esteban Ocon",
@@ -180,7 +194,8 @@ let Ocon = {
     habilidade: 85,
     visao: 84,
     ritmo: 84,
-    total: 85
+    total: 85,
+    pontos: 0
 };
 let bearman = {
     nome: "Oliver Bearman",
@@ -191,7 +206,8 @@ let bearman = {
     habilidade: 88,
     visao: 70,
     ritmo: 84,
-    total: 84
+    total: 84,
+    pontos: 0
 };
 let albon = {
     nome: "Alexander Albon",
@@ -202,7 +218,8 @@ let albon = {
     habilidade: 86,
     visao: 76,
     ritmo: 83,
-    total: 84
+    total: 84,
+    pontos: 0
 };
 let bottas = {
     nome: "Valtteri Bottas",
@@ -213,7 +230,8 @@ let bottas = {
     habilidade: 76,
     visao: 93,
     ritmo: 83,
-    total: 83
+    total: 83,
+    pontos: 0
 };
 let Bortoleto = {
     nome: "Gabriel Bortoleto",
@@ -224,7 +242,8 @@ let Bortoleto = {
     habilidade: 82,
     visao: 77,
     ritmo: 82,
-    total: 82
+    total: 82,
+    pontos: 0 
 };
 let Lawson = {
     nome: "Liam Lawson",
@@ -235,7 +254,8 @@ let Lawson = {
     habilidade: 81,
     visao: 73,
     ritmo: 81,
-    total: 81
+    total: 81,
+    pontos: 0
 };
 let Stroll = {
     nome: "Lance Stroll",
@@ -246,7 +266,8 @@ let Stroll = {
     habilidade: 77,
     visao: 73,
     ritmo: 76,
-    total: 78
+    total: 78,
+    pontos: 0
 };
 let Colapinto = {
     nome: "Franco Colapinto",
@@ -257,7 +278,8 @@ let Colapinto = {
     habilidade: 71,
     visao: 74,
     ritmo: 75,
-    total: 74
+    total: 74,
+    pontos: 0
 };
 let Lindblad = {
     nome: "Arvid Lindblad",
@@ -268,7 +290,8 @@ let Lindblad = {
     habilidade: 72,
     visao: 66,
     ritmo: 78,
-    total: 74
+    total: 74,
+    pontos: 0
 };
 let pilotos = [
     max,
@@ -456,8 +479,8 @@ return resultados;
 function corrida(pilotos, equipes) {
     for (let i = 0; i < pilotos.length; i++) {
         pilotos[i].tempoTotal =
-            (pilotos[i].volta * 90) -
-            Math.random() * 50 -
+            (pilotos[i].volta * 50) -
+            Math.random() * 80 -
             (pilotos[i].habilidade * 0.2) -
             (pilotos[i].experiencia * 0.1) -
             (pilotos[i].equipe.desempenho * 0.1) -
@@ -502,6 +525,59 @@ function corrida(pilotos, equipes) {
 
     return resultados;
 }
+for (let i = 0; i < 24; i++) {
+    classificatorio(pilotos, equipes);
+    let resultados = corrida(pilotos, equipes);
 
-classificatorio(pilotos, equipes);
-corrida(pilotos, equipes);
+   let pontosCorrida = [25, 18, 15, 12, 10, 8, 6, 4, 2, 1];
+
+for (let j = 0; j < 10; j++) {
+    resultados[j].pontos += pontosCorrida[j];
+}
+  
+        let temporario = [...pilotos];
+
+    let tabeladepontos = [];
+
+    for (let i = 0; i < pilotos.length; i++) {
+
+        let maior = -Infinity;
+        let posicao = -1;
+
+        for (let j = 0; j < temporario.length; j++) {
+
+           if (temporario[j] != undefined && temporario[j].pontos > maior) {
+
+                maior = temporario[j].pontos;
+                posicao = j;
+            }
+        }
+if (posicao === -1) {
+    break;
+}
+        tabeladepontos.push(temporario[posicao]);
+
+        temporario.splice(posicao, 1);
+    }
+
+console.log("===== TABELA DE PONTOS =====");
+    console.log("Posição | Piloto | Equipe | Pontos");
+
+    for (let i = 0; i < tabeladepontos.length; i++) {
+        console.log(
+            (i + 1) + "º | " +
+            tabeladepontos[i].nome + " | " +
+            tabeladepontos[i].equipe.nome + " | " +
+            tabeladepontos[i].pontos
+        );
+    }
+    console.log("===== DESEJA CONTINUAR? =====");
+console.log("1 - Sim");
+console.log("2 - Não");
+
+opcao = prompt("Digite o número da opção desejada:");
+    if (opcao == 2) {
+    break;
+}
+}
+
