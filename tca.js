@@ -20,9 +20,9 @@ seunome = prompt("Digite seu nome: ")
 suaidade = prompt("Digite sua idade: ")
 suanacionalidade = prompt("Digite sua nacionalidade: ")
 suaexperiencia = 50
-suahabilidade = Math.floor(Math.random() * 70 + 30)
-suavisao = Math.floor(Math.random() * 70 + 30)
-seuritmo = Math.floor(Math.random() * 70 + 30)
+suahabilidade = Math.floor(Math.random() * 40 + 60)
+suavisao = Math.floor(Math.random() * 40 + 60)
+seuritmo = Math.floor(Math.random() * 40 + 60)
 suatotal = Math.floor(
     (suaexperiencia + suahabilidade + suavisao + seuritmo * 1.25) / 4
 );
@@ -32,7 +32,7 @@ let seuPiloto = new piloto(seunome, suaidade, "", suanacionalidade, suaexperienc
 let max = {
     nome: "Max Verstappen",
     idade: 29,
-    equipe: {"nome": "Red Bull Racing", "desempenho": 95},
+    equipe: {"nome": "Red Bull Racing", "desempenho": 95, "pontos": 0},
     nacionalidade: "Holandês",
     experiencia: 88,
     habilidade: 96,
@@ -44,7 +44,7 @@ let max = {
 let leclerc = {
     nome: "Charles Leclerc",
     idade: 29,
-    equipe: {"nome": "Ferrari", "desempenho": 88},
+    equipe: {"nome": "Ferrari", "desempenho": 88, "pontos": 0},
     nacionalidade: "Monegasco",
     experiencia: 83,
     habilidade: 92,
@@ -56,7 +56,7 @@ let leclerc = {
 let hamilton = {
     nome: "Lewis Hamilton",
     idade: 41,
-    equipe: {"nome": "Ferrari", "desempenho": 88},
+    equipe: {"nome": "Ferrari", "desempenho": 88, "pontos": 0},
     nacionalidade: "Britânico",
     experiencia: 98,
     habilidade: 93,
@@ -68,7 +68,7 @@ let hamilton = {
 let lando = {
     nome: "Lando Norris",
     idade: 26,
-    equipe: {"nome": "McLaren", "desempenho": 87},
+    equipe: {"nome": "McLaren", "desempenho": 87, "pontos": 0},
     nacionalidade: "Britânico",
     experiencia: 83,
     habilidade: 93,
@@ -80,7 +80,7 @@ let lando = {
 let piastri = {
     nome: "Oscar Piastri",
     idade: 25,
-    equipe: {"nome": "McLaren", "desempenho": 87},
+    equipe: {"nome": "McLaren", "desempenho": 87, "pontos": 0},
     nacionalidade: "Australiano",
     experiencia: 78,
     habilidade: 95,
@@ -92,7 +92,7 @@ let piastri = {
 let George = {
     nome: "George Russell",
     idade: 28,
-    equipe: {"nome": "Mercedes", "desempenho": 85},
+    equipe: {"nome": "Mercedes", "desempenho": 85, "pontos": 0},
     nacionalidade: "Britânico",
     experiencia: 83,
     habilidade: 94,
@@ -104,7 +104,7 @@ let George = {
 let alonso = {
     nome: "Fernando Alonso",
     idade: 44,
-    equipe: {"nome": "Aston Martin", "desempenho": 85},
+    equipe: {"nome": "Aston Martin", "desempenho": 85, "pontos": 0},
     nacionalidade: "Espanhol",
     experiencia: 99,
     habilidade: 87,
@@ -116,7 +116,7 @@ let alonso = {
 let antonelli = {
     nome: "kimi Antonelli",
     idade: 20,
-    equipe: {"nome": "Mercedes", "desempenho": 85},
+    equipe: {"nome": "Mercedes", "desempenho": 85, "pontos": 0},
     nacionalidade: "Italiano",
     experiencia: 71,
     habilidade: 85,
@@ -128,7 +128,7 @@ let antonelli = {
 let gasly = {
     nome: "Pierre Gasly",
     idade: 30,
-    equipe: {"nome": "Alpine", "desempenho": 86},
+    equipe: {"nome": "Alpine", "desempenho": 86, "pontos": 0},
     nacionalidade: "Francês",
     experiencia: 83,
     habilidade: 84,
@@ -140,7 +140,7 @@ let gasly = {
 let sainz = {
     nome: "Carlos Sainz",
     idade: 32,
-    equipe: {"nome": "Williams", "desempenho": 86},
+    equipe: {"nome": "Williams", "desempenho": 86, "pontos": 0},
     nacionalidade: "Espanhol",
     experiencia: 98,
     habilidade: 87,
@@ -152,7 +152,7 @@ let sainz = {
 let Hülkenberg = {
     nome: "Nico Hülkenberg",
     idade: 39,
-    equipe: {"nome": "Audi", "desempenho": 85},
+    equipe: {"nome": "Audi", "desempenho": 85, "pontos": 0},
     nacionalidade: "Alemão",
     experiencia: 88,
     habilidade: 85,
@@ -164,7 +164,7 @@ let Hülkenberg = {
 let perez = {
     nome: "Sergio Perez",
     idade: 36,
-    equipe: {"nome": "Cadillac", "desempenho": 85},
+    equipe: {"nome": "Cadillac", "desempenho": 85, "pontos": 0},
     nacionalidade: "Mexicano",
     experiencia: 92,
     habilidade: 83,
@@ -176,7 +176,7 @@ let perez = {
 let hadjar = {
     nome: "Isack Hadjar",
     idade: 22,
-    equipe: {"nome": "Red Bull Racing", "desempenho": 95},
+    equipe: {"nome": "Red Bull Racing", "desempenho": 95, "pontos": 0},
     nacionalidade: "Francês",
     experiencia: 72,
     habilidade: 81,
@@ -188,7 +188,7 @@ let hadjar = {
 let Ocon = {
     nome: "Esteban Ocon",
     idade: 30,
-    equipe: {"nome": "Haas", "desempenho": 75},
+    equipe: {"nome": "Haas", "desempenho": 75, "pontos": 0},
     nacionalidade: "Francês",
     experiencia: 83,
     habilidade: 85,
@@ -200,7 +200,7 @@ let Ocon = {
 let bearman = {
     nome: "Oliver Bearman",
     idade: 21,
-    equipe: {"nome": "Haas", "desempenho": 75},
+    equipe: {"nome": "Haas", "desempenho": 75, "pontos": 0},
     nacionalidade: "Britânico",
     experiencia: 73,
     habilidade: 88,
@@ -212,7 +212,7 @@ let bearman = {
 let albon = {
     nome: "Alexander Albon",
     idade: 30,
-    equipe: {"nome": "Williams", "desempenho": 86},
+    equipe: {"nome": "Williams", "desempenho": 86, "pontos": 0},
     nacionalidade: "Tailandês",
     experiencia: 84,
     habilidade: 86,
@@ -224,7 +224,7 @@ let albon = {
 let bottas = {
     nome: "Valtteri Bottas",
     idade: 37,
-    equipe: {"nome": "Cadillac", "desempenho": 85},
+    equipe: {"nome": "Cadillac", "desempenho": 85, "pontos": 0},
     nacionalidade: "Finlandês",
     experiencia: 89,
     habilidade: 76,
@@ -236,7 +236,7 @@ let bottas = {
 let Bortoleto = {
     nome: "Gabriel Bortoleto",
     idade: 22,
-    equipe: {"nome": "Audi", "desempenho": 78},
+    equipe: {"nome": "Audi", "desempenho": 78, "pontos": 0},
     nacionalidade: "Brasileiro",
     experiencia: 70,
     habilidade: 82,
@@ -248,7 +248,7 @@ let Bortoleto = {
 let Lawson = {
     nome: "Liam Lawson",
     idade: 24,
-    equipe: {"nome": "Racing Bulls", "desempenho": 82},
+    equipe: {"nome": "Racing Bulls", "desempenho": 82, "pontos": 0},
     nacionalidade: "Neozelandês",
     experiencia: 74,
     habilidade: 81,
@@ -260,7 +260,7 @@ let Lawson = {
 let Stroll = {
     nome: "Lance Stroll",
     idade: 27,
-    equipe: {"nome": "Aston Martin", "desempenho": 72},
+    equipe: {"nome": "Aston Martin", "desempenho": 72, "pontos": 0},
     nacionalidade: "Canadense",
     experiencia: 84,
     habilidade: 77,
@@ -272,7 +272,7 @@ let Stroll = {
 let Colapinto = {
     nome: "Franco Colapinto",
     idade: 23,
-    equipe: {"nome": "Alpine", "desempenho": 80},
+    equipe: {"nome": "Alpine", "desempenho": 80, "pontos": 0},
     nacionalidade: "Argentino",
     experiencia: 70,
     habilidade: 71,
@@ -284,7 +284,7 @@ let Colapinto = {
 let Lindblad = {
     nome: "Arvid Lindblad",
     idade: 19,
-    equipe: {"nome": "Racing Bulls", "desempenho": 82},
+    equipe: {"nome": "Racing Bulls", "desempenho": 82, "pontos": 0},
     nacionalidade: "Britânico",
     experiencia: 50,
     habilidade: 72,
@@ -319,16 +319,17 @@ let pilotos = [
 ];
 
   let equipes = [
-        {"nome": "McLaren", "desempenho": 87},       
-        {"nome": "Red Bull Racing", "desempenho": 88},
-        {"nome": "Mercedes", "desempenho": 90},
-        {"nome": "Aston Martin", "desempenho": 72},
-        {"nome": "Alpine", "desempenho": 80},
-        {"nome": "Williams", "desempenho": 73},
-        {"nome": "Racing Bulls", "desempenho": 82},
-        {"nome": "Haas", "desempenho": 75},
-        {"nome": "Audi", "desempenho": 78},
-        {"nome": "Cadillac", "desempenho": 71}
+        {"nome": "McLaren", "desempenho": 87, "pontos": 0},       
+        {"nome": "Red Bull Racing", "desempenho": 88, "pontos": 0},
+        {"nome": "Mercedes", "desempenho": 90, "pontos": 0},
+        {"nome": "Aston Martin", "desempenho": 72, "pontos": 0},
+        {"nome": "Alpine", "desempenho": 80, "pontos": 0},
+        {"nome": "Williams", "desempenho": 73, "pontos": 0},
+        {"nome": "Racing Bulls", "desempenho": 82, "pontos": 0},
+        {"nome": "Haas", "desempenho": 75, "pontos": 0},
+        {"nome": "Audi", "desempenho": 78, "pontos": 0},
+        {"nome": "Cadillac", "desempenho": 71, "pontos": 0},
+        {"nome": "Ferrari", "desempenho": 87, "pontos": 0}
     ];
 
 function substituirPiloto(pilotos, seuPiloto) {
@@ -357,12 +358,12 @@ function substituirPiloto(pilotos, seuPiloto) {
  
     let pilotosDaEquipe = [];
 
-    for (let i = 0; i < pilotos.length; i++) {
+        for (let i = 0; i < pilotos.length; i++) {
 
-        if (pilotos[i].equipe.nome === equipeEscolhida.nome) {
-            pilotosDaEquipe.push(i);
+            if (pilotos[i].equipe.nome === equipeEscolhida.nome) {
+                pilotosDaEquipe.push(i);
+            }
         }
-    }
 
 
     if (pilotosDaEquipe.length !== 2) {
@@ -405,7 +406,7 @@ function substituirPiloto(pilotos, seuPiloto) {
 
     let pilotoSubstituido = pilotos[indiceSubstituido];
 
-    seuPiloto.equipe = { nome: equipeEscolhida.nome, desempenho: equipeEscolhida.desempenho };
+    seuPiloto.equipe = { nome: equipeEscolhida.nome, desempenho: equipeEscolhida.desempenho, pontos: 0 };
   
 
     pilotos[indiceSubstituido] = seuPiloto;
@@ -525,59 +526,121 @@ function corrida(pilotos, equipes) {
 
     return resultados;
 }
-for (let i = 0; i < 24; i++) {
-    classificatorio(pilotos, equipes);
-    let resultados = corrida(pilotos, equipes);
-
-   let pontosCorrida = [25, 18, 15, 12, 10, 8, 6, 4, 2, 1];
-
-for (let j = 0; j < 10; j++) {
-    resultados[j].pontos += pontosCorrida[j];
-}
-  
-        let temporario = [...pilotos];
-
+function simularCampeonato(pilotos, equipes) {
     let tabeladepontos = [];
 
-    for (let i = 0; i < pilotos.length; i++) {
+    for (let i = 0; i < 24; i++) {
+        classificatorio(pilotos, equipes);
+        let resultados = corrida(pilotos, equipes);
 
-        let maior = -Infinity;
-        let posicao = -1;
+        let pontosCorrida = [25, 18, 15, 12, 10, 8, 6, 4, 2, 1];
 
-        for (let j = 0; j < temporario.length; j++) {
+        for (let j = 0; j < 10; j++) {
+            if (resultados[j]) {
+                resultados[j].pontos += pontosCorrida[j];
 
-           if (temporario[j] != undefined && temporario[j].pontos > maior) {
-
-                maior = temporario[j].pontos;
-                posicao = j;
+                for (let k = 0; k < equipes.length; k++) {
+                    if (resultados[j].equipe.nome === equipes[k].nome) {
+                        equipes[k].pontos += pontosCorrida[j];
+                        break;
+                    }
+                }
             }
         }
-if (posicao === -1) {
-    break;
-}
-        tabeladepontos.push(temporario[posicao]);
 
-        temporario.splice(posicao, 1);
+        let temporario = [...pilotos];
+        tabeladepontos = [];
+
+        for (let k = 0; k < pilotos.length; k++) {
+            let maior = -Infinity;
+            let posicao = -1;
+
+            for (let j = 0; j < temporario.length; j++) {
+                if (temporario[j] != undefined && temporario[j].pontos > maior) {
+                    maior = temporario[j].pontos;
+                    posicao = j;
+                }
+            }
+
+            if (posicao === -1) {
+                break;
+            }
+
+            tabeladepontos.push(temporario[posicao]);
+            temporario.splice(posicao, 1);
+        }
+
+        console.log("===== TABELA DE PONTOS =====");
+        console.log("Posição | Piloto | Equipe | Pontos");
+
+        for (let i = 0; i < tabeladepontos.length; i++) {
+            console.log(
+                (i + 1) + "º | " +
+                tabeladepontos[i].nome + " | " +
+                tabeladepontos[i].equipe.nome + " | " +
+                tabeladepontos[i].pontos
+            );
+        }
+
+        console.log("===== DESEJA CONTINUAR? =====");
+        console.log("1 - Sim");
+        console.log("2 - Não");
+
+        let opcao = Number(prompt("Digite o número da opção desejada:"));
+        if (opcao === 2) {
+            break;
+        }
     }
 
-console.log("===== TABELA DE PONTOS =====");
-    console.log("Posição | Piloto | Equipe | Pontos");
-
-    for (let i = 0; i < tabeladepontos.length; i++) {
-        console.log(
-            (i + 1) + "º | " +
-            tabeladepontos[i].nome + " | " +
-            tabeladepontos[i].equipe.nome + " | " +
-            tabeladepontos[i].pontos
-        );
-    }
-    console.log("===== DESEJA CONTINUAR? =====");
-console.log("1 - Sim");
-console.log("2 - Não");
-
-opcao = prompt("Digite o número da opção desejada:");
-    if (opcao == 2) {
-    break;
-}
+    return tabeladepontos;
 }
 
+let resultados = simularCampeonato(pilotos, equipes);
+
+console.log("===== FIM DO CAMPEONATO =====");
+console.log("===== CLASSIFICAÇÃO FINAL =====");
+for (let i = 0; i < resultados.length; i++) {
+    console.log(
+        (i + 1) + "º | " +
+        resultados[i].nome + " | " +
+        resultados[i].equipe.nome + " | " +
+        resultados[i].pontos
+    );
+}
+console.log("===== CAMPEÃO DO CAMPEONATO =====");
+let campeao = resultados[0];
+console.log(
+    "1º | " +
+    campeao.nome + " | " +
+    campeao.equipe.nome + " | " +
+    campeao.pontos
+);
+let temporario = [...equipes];
+        tabeladepontosequipes = [];
+  for (let k = 0; k < equipes.length; k++) {
+            let maior = -Infinity;
+            let posicao = -1;
+            for (let j = 0; j < temporario.length; j++) {
+                if (temporario[j] != undefined && temporario[j].pontos > maior) {
+                    maior = temporario[j].pontos;
+                    posicao = j;
+                }
+            }
+
+            if (posicao === -1) {
+                break;
+            }
+
+            tabeladepontosequipes.push(temporario[posicao]);
+            temporario.splice(posicao, 1);
+        }
+        
+console.log("===== CLASSIFICAÇÃO FINAL =====");
+for (let i = 0; i < tabeladepontosequipes.length; i++) {
+    console.log(
+        (i + 1) + "º | " +
+        tabeladepontosequipes[i].nome + " | " +
+        tabeladepontosequipes[i].pontos
+    );
+}
+    
